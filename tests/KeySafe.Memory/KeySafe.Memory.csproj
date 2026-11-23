@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="libsodium" Version="[1.0.22]" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.15" />
+    <Compile Include="../../src/KeySafe/Models.cs" Link="Models.cs" />
+    <Compile Include="../../src/KeySafe/KeySafeInfo.cs" Link="KeySafeInfo.cs" />
+    <Compile Include="../../src/KeySafe/Security.cs" Link="Security.cs" />
+    <Compile Include="../../src/KeySafe/SodiumNative.cs" Link="SodiumNative.cs" />
+    <Compile Include="../../src/KeySafe/VaultStore.cs" Link="VaultStore.cs" />
+    <Compile Include="../../src/KeySafe/VaultDatabase.cs" Link="VaultDatabase.cs" />
+    <Compile Include="../../src/KeySafe/Totp.cs" Link="Totp.cs" />
+    <Compile Include="../../src/KeySafe/CsvTransfer.cs" Link="CsvTransfer.cs" />
+  </ItemGroup>
+</Project>
